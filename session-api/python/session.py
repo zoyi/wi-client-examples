@@ -1,7 +1,6 @@
 import requests
 import time
 import os, sys
-from dotenv import load_dotenv
 from datetime import datetime, timedelta
 
 session_keys = ['area', 'deny', 'dwell_time', 'local', 'revisit_count', 'revisit_period', 'row_key',
@@ -67,5 +66,4 @@ def csv_dump_sessions(email, token, shop_id, target_date):
   print(f'average response time: {total_spent_time / number_of_requests}')
 
 if __name__ == "__main__":
-  load_dotenv()
   csv_dump_sessions(os.getenv('X_USER_EMAIL'), os.getenv('X_USER_TOKEN'), sys.argv[1], sys.argv[2])

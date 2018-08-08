@@ -4,6 +4,7 @@
 
 ## 준비물
 
+* [pyenv](https://github.com/pyenv/pyenv#homebrew-on-mac-os-x)
 * [pipenv](https://github.com/pypa/pipenv)
 
 ## 실행 방법
