@@ -29,3 +29,14 @@ $ python session.py [매장 아이디] [세션 날짜 YYYY-MM-DD 포맷]
 ## 소스코드 임포트
 
 session.py 내의 csv_dump_sessions 함수를 import 하여 사용하실 수도 있습니다.
+
+## Pipenv를 사용하지 않는 경우
+
+.env 파일을 알아서 불러와주지 않으므로 [python-dotenv](https://github.com/theskumar/python-dotenv) 등을 사용하거나
+
+```sh
+$ export X_USER_EMAIL="user@email.com"
+$ export X_USER_TOKEN="asdfasdfdasdfasdfdsf"
+```
+
+와 같이 환경 변수를 등록해주어야 합니다.
